@@ -1,0 +1,15 @@
+.loading {
+  min-height: 80vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-text {
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: var(--secondary);
+}

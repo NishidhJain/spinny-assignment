@@ -1,0 +1,74 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--bg-dark);
+  z-index: 10;
+
+  padding: 0.9rem 0;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 620px;
+  background: var(--card-bg);
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--border-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchBar:focus-within {
+  border-color: var(--secondary);
+}
+
+.input {
+  height: 2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+  padding-left: 0.3rem;
+
+  flex: 1;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgb(212, 212, 212);
+}
+
+.request-url {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  letter-spacing: 0.06rem;
+  margin: 1rem 0 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .request-url {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+
+  .url {
+    display: block;
+    padding-top: 0.2rem;
+  }
+}

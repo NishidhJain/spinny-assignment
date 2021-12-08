@@ -1,0 +1,16 @@
+.error-container {
+  min-height: 80vh;
+  width: 100%;
+  color: var(--error-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-title {
+  position: relative;
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+}
